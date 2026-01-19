@@ -1,0 +1,21 @@
+[project]
+name = "import-scope"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JC Louis", email = "jean-charles.louis@lifen.fr" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+import-scope = "import_scope:main.main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "import_scope"
+module-root = ""
